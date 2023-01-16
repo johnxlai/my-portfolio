@@ -1,9 +1,8 @@
 //Layout and Theme
 body {
-  background-color: $black;
+  background-color: $primary;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
 }
 
@@ -66,4 +65,12 @@ body {
   &-column {
     flex-direction: column;
   }
+}
+
+.d-block {
+  display: block;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
