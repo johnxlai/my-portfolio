@@ -209,7 +209,17 @@ body {
   width: 100%;
 }
 .main-header .container {
-  background-color: aqua;
+  padding: 16px 0;
+}
+.main-header .container h2 {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+.main-header .container .col-12 {
+  align-items: center;
+}
+.main-header .container .col-12:nth-child(2) {
+  justify-content: end;
 }
 
 nav.main-nav {
@@ -226,6 +236,15 @@ nav.main-nav ul li {
   padding: 0 5px;
 }
 
+main {
+  padding: 32px 0;
+}
+main .about-me {
+  text-align: center;
+}
+main .about-me h2 {
+  font-size: 1.2rem;
+}
 footer.footer {
   margin-top: auto;
 }

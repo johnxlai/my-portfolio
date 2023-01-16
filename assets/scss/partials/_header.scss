@@ -4,6 +4,17 @@
   width: 100%;
 
   .container {
-    background-color: aqua;
+    padding: 16px 0;
+
+    h2 {
+      margin-bottom: 0;
+      font-size: 1.3rem;
+    }
+    .col-12 {
+      align-items: center;
+    }
+    .col-12:nth-child(2) {
+      justify-content: end;
+    }
   }
 }
