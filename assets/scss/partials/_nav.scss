@@ -1,1 +1,17 @@
 // Navigation
+nav.main-nav {
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+    background-color: white;
+    padding: 12px;
+
+    li {
+      padding: 0 5px;
+    }
+  }
+}

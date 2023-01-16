@@ -4,11 +4,12 @@ $secondary: hsl(52, 100%, 48%);
 $tertiary: #00d4ff;
 $green: #72ff00;
 $black: #001519;
+$white: #fff;
 $dark-grey: #262525;
 
 .text {
   &-white {
-    color: white;
+    color: $white;
   }
   &-primary {
     color: $primary;
@@ -26,7 +27,7 @@ $dark-grey: #262525;
 
 .bg {
   &-white {
-    color: white;
+    color: $white;
   }
   &-primary {
     color: $primary;

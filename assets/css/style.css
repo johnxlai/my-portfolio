@@ -87,6 +87,38 @@ ul {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media screen and (min-width: 1200px) {
 } */
+.text-white {
+  color: #fff;
+}
+.text-primary {
+  color: #3f5c64;
+}
+.text-secondary {
+  color: hsl(52deg, 100%, 48%);
+}
+.text-tertiary {
+  color: #00d4ff;
+}
+.text-black {
+  color: #001519;
+}
+
+.bg-white {
+  color: #fff;
+}
+.bg-primary {
+  color: #3f5c64;
+}
+.bg-secondary {
+  color: hsl(52deg, 100%, 48%);
+}
+.bg-tertiary {
+  color: #00d4ff;
+}
+.bg-black {
+  color: #001519;
+}
+
 h1,
 h2,
 h3,
@@ -118,6 +150,7 @@ body {
 
 .container {
   width: 100%;
+  margin: 0 auto;
   /* Extra small devices (phones, 600px and down) */
   /* Medium devices (landscape tablets, 768px and up) */
   /* Large devices (laptops/desktops, 992px and up) */
@@ -146,13 +179,51 @@ body {
 
 .row {
   display: flex;
-  margin-right: -15px;
-  margin-left: -15px;
+  flex-wrap: wrap;
 }
 
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
+}
+.col-md-6 {
+  flex: 0 0 50%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.main-header {
+  display: flex;
+  width: 100%;
+}
+.main-header .container {
+  background-color: aqua;
+}
+
+nav.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav.main-nav ul {
+  display: flex;
+  background-color: white;
+  padding: 12px;
+}
+nav.main-nav ul li {
+  padding: 0 5px;
 }
 
 footer.footer {

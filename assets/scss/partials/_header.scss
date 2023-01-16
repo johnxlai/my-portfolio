@@ -1,1 +1,9 @@
 // header
+.main-header {
+  display: flex;
+  width: 100%;
+
+  .container {
+    background-color: aqua;
+  }
+}
