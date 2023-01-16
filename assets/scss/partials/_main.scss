@@ -51,6 +51,7 @@ main {
     .project-container {
       display: flex;
       width: 100%;
+      margin-bottom: 5rem;
 
       .half-containers {
         width: 50%;
@@ -152,11 +153,11 @@ main {
           .project-title {
             transition: 3s;
             text-align: right;
-            transform: translate(-90%, 0);
+            // transform: translate(-90%, 0);
           }
         }
         .img-container {
-          transform: translate(90%, 0);
+          // transform: translate(90%, 0);
           transition: 3s;
         }
         &.fade-in-frame {

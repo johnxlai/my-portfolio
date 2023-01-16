@@ -332,6 +332,7 @@ main .recent-work:before {
 main .recent-work .project-container {
   display: flex;
   width: 100%;
+  margin-bottom: 5rem;
 }
 main .recent-work .project-container .half-containers {
   width: 50%;
@@ -405,10 +406,8 @@ main .recent-work .project-container.img-on-right .folio-container {
 main .recent-work .project-container.img-on-right .folio-container .project-title {
   transition: 3s;
   text-align: right;
-  transform: translate(-90%, 0);
 }
 main .recent-work .project-container.img-on-right .img-container {
-  transform: translate(90%, 0);
   transition: 3s;
 }
 main .recent-work .project-container.img-on-right.fade-in-frame .img-container {
