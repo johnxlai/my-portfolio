@@ -185,6 +185,7 @@ body {
 
 .col {
   width: 100%;
+  display: flex;
 }
 .col-12 {
   flex: 0 0 100%;
@@ -227,12 +228,27 @@ body {
   padding: 3rem;
 }
 
+.pl-4 {
+  padding-left: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 img {
   max-width: 100%;
+}
+
+.btn-primary {
+  background-color: #3f5c64;
+  color: white;
+  text-decoration: none;
+  padding: 0.375rem 0.75rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #2b3f45;
 }
 
 .main-header {
@@ -279,6 +295,9 @@ main .contact {
 main .about-me {
   text-align: center;
 }
+main .about-me .col-12 {
+  margin-bottom: 8rem;
+}
 main .about-me h2 {
   font-size: 1.8rem;
 }
@@ -321,6 +340,9 @@ main .recent-work .project-container .img-container {
   overflow: hidden;
   max-height: 500px;
 }
+main .recent-work .project-container .img-container a img:hover {
+  scale: 1.2;
+}
 main .recent-work .project-container .img-container .folio-img-size {
   max-width: 350px;
   width: 100%;
@@ -349,9 +371,8 @@ main .recent-work .project-container .folio-container .triangle h4 {
   position: relative;
   left: 47px;
   top: 4px;
-}
-main .recent-work .project-container .folio-container .project-title {
-  opacity: 0;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 main .recent-work .project-container .folio-container .project-title h3 {
   font-size: 1.2rem;
@@ -365,10 +386,6 @@ main .recent-work .project-container.img-on-left .img-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-main .recent-work .project-container.img-on-left .folio-container .project-title {
-  transform: translate(90%, 0);
-  transition: 3s;
 }
 main .recent-work .project-container.img-on-left.fade-in-frame .img-container {
   transform: translate(0);
