@@ -12,10 +12,13 @@ main {
     text-align: center;
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
     }
-
     p {
+      max-width: 50%;
+      margin: 0 auto;
+      line-height: 29px;
+      margin-bottom: 28px;
     }
 
     img.profile-image {
