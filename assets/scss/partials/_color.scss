@@ -1,8 +1,43 @@
 // Theme colors
-$primary-color: #3f5c64;
-$primary-pink: #fe53bb;
-$secondary-yellow: #f5d300;
-$tertiary-blue: #00d4ff;
+$primary: #3f5c64;
+$secondary: hsl(52, 100%, 48%);
+$tertiary: #00d4ff;
 $green: #72ff00;
 $black: #001519;
 $dark-grey: #262525;
+
+.text {
+  &-white {
+    color: white;
+  }
+  &-primary {
+    color: $primary;
+  }
+  &-secondary {
+    color: $secondary;
+  }
+  &-tertiary {
+    color: $tertiary;
+  }
+  &-black {
+    color: $black;
+  }
+}
+
+.bg {
+  &-white {
+    color: white;
+  }
+  &-primary {
+    color: $primary;
+  }
+  &-secondary {
+    color: $secondary;
+  }
+  &-tertiary {
+    color: $tertiary;
+  }
+  &-black {
+    color: $black;
+  }
+}

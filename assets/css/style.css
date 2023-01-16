@@ -123,8 +123,25 @@ body {
   /* Large devices (laptops/desktops, 992px and up) */
   /* Extra large devices (large laptops and desktops, 1200px and up) */
 }
-.text-white {
-  color: #fff;
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 .row {
@@ -136,10 +153,6 @@ body {
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
-}
-
-header {
-  color: green;
 }
 
 footer.footer {
