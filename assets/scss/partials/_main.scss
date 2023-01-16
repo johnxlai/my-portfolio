@@ -11,5 +11,12 @@ main {
 
     p {
     }
+
+    img.profile-image {
+      max-width: 100%;
+      width: 200px;
+      border-radius: 50%;
+      border: 4px solid $white;
+    }
   }
 }
