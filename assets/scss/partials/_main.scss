@@ -41,7 +41,7 @@ main {
       position: absolute;
       content: '';
       width: 100vw;
-      height: 200px;
+      height: 10rem;
       left: 0;
       top: -90px;
       background: $black;
@@ -61,13 +61,12 @@ main {
       .img-container {
         overflow: hidden;
         max-height: 500px;
+        opacity: 0.2;
 
-        a img:hover {
-          scale: 1.2;
+        &:hover {
+          opacity: 1;
+          overflow-y: scroll;
         }
-
-        //add JS LATER
-        // opacity: 0.3;
 
         .folio-img-size {
           max-width: 350px;

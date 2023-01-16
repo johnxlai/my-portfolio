@@ -321,7 +321,7 @@ main .recent-work:before {
   position: absolute;
   content: "";
   width: 100vw;
-  height: 200px;
+  height: 10rem;
   left: 0;
   top: -90px;
   background: #001519;
@@ -339,9 +339,11 @@ main .recent-work .project-container .half-containers {
 main .recent-work .project-container .img-container {
   overflow: hidden;
   max-height: 500px;
+  opacity: 0.2;
 }
-main .recent-work .project-container .img-container a img:hover {
-  scale: 1.2;
+main .recent-work .project-container .img-container:hover {
+  opacity: 1;
+  overflow-y: scroll;
 }
 main .recent-work .project-container .img-container .folio-img-size {
   max-width: 350px;
