@@ -8,6 +8,49 @@ $black: #001519;
 $white: #fff;
 $dark-grey: #262525;
 
+body {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+// Utility classes
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  /* Extra small devices (phones, 600px and down) */
+  @media screen and (min-width: 600px) {
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+  }
+}
+
 .text-white {
   color: $white;
+}
+
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
 }

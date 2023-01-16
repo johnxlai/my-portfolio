@@ -1,3 +1,8 @@
-h1 {
-  color: green($color: #000000);
+// Footer
+footer.footer {
+  margin-top: auto;
+
+  h6 {
+    font-size: 1rem;
+  }
 }
