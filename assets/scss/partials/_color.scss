@@ -27,18 +27,18 @@ $dark-grey: #262525;
 
 .bg {
   &-white {
-    color: $white;
+    background-color: $white;
   }
   &-primary {
-    color: $primary;
+    background-color: $primary;
   }
   &-secondary {
-    color: $secondary;
+    background-color: $secondary;
   }
   &-tertiary {
-    color: $tertiary;
+    background-color: $tertiary;
   }
   &-black {
-    color: $black;
+    background-color: $black;
   }
 }

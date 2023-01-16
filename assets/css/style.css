@@ -104,19 +104,19 @@ ul {
 }
 
 .bg-white {
-  color: #fff;
+  background-color: #fff;
 }
 .bg-primary {
-  color: #3f5c64;
+  background-color: #3f5c64;
 }
 .bg-secondary {
-  color: hsl(52deg, 100%, 48%);
+  background-color: hsl(52deg, 100%, 48%);
 }
 .bg-tertiary {
-  color: #00d4ff;
+  background-color: #00d4ff;
 }
 .bg-black {
-  color: #001519;
+  background-color: #001519;
 }
 
 h1,
@@ -207,7 +207,6 @@ body {
 .main-header {
   display: flex;
   width: 100%;
-  background-color: #3f5c64;
 }
 .main-header .container {
   padding: 16px 0;
@@ -238,9 +237,10 @@ nav.main-nav ul li {
 }
 
 main {
-  padding: 32px 0;
+  width: 100%;
 }
 main .about-me {
+  padding: 32px 0;
   text-align: center;
 }
 main .about-me h2 {
@@ -251,6 +251,9 @@ main .about-me img.profile-image {
   width: 200px;
   border-radius: 50%;
   border: 4px solid #fff;
+}
+main .portfolio {
+  padding: 64px 0;
 }
 
 footer.footer {
