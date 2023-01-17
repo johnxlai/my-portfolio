@@ -11,7 +11,7 @@
     width: 100vw;
     height: 11rem;
     left: 0;
-    top: -6rem;
+    top: -5rem;
     background: $black;
     transform: skewY(-4deg);
   }
@@ -34,6 +34,7 @@
     .jl-logo {
       width: 50px;
       margin-right: 0.6rem;
+      background-color: #1e1e1e;
     }
   }
 }

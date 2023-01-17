@@ -1,6 +1,10 @@
 // Main
 
 main {
+  h3 {
+    font-size: 2rem;
+  }
+
   width: 100%;
   .about-me,
   .portfolio,
@@ -17,7 +21,7 @@ main {
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2.1rem;
     }
     p {
       max-width: 50%;
@@ -109,10 +113,10 @@ main {
         .project-title {
           //Add Js later
           // opacity: 0;
-          h3 {
+          h5 {
             font-size: 1.2rem;
             @media (min-width: 576px) {
-              font-size: 1.75rem;
+              font-size: 1.5rem;
             }
           }
         }
