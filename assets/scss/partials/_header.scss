@@ -3,8 +3,22 @@
   display: flex;
   width: 100%;
   padding: 16px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 11rem;
+    left: 0;
+    top: -6rem;
+    background: $black;
+    transform: skewY(-4deg);
+  }
 
   .container {
+    position: relative;
+    z-index: 1;
     padding: 16px 0;
 
     h2 {
@@ -16,6 +30,10 @@
     }
     .col-12:nth-child(2) {
       justify-content: end;
+    }
+    .jl-logo {
+      width: 50px;
+      margin-right: 5px;
     }
   }
 }

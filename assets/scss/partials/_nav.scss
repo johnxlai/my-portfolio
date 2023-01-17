@@ -2,16 +2,19 @@
 nav.main-nav {
   display: flex;
   align-items: center;
-
   justify-content: flex-end;
 
   ul {
     display: flex;
-    background-color: white;
+    background-color: $primary;
     padding: 12px;
 
     li {
       padding: 0 5px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }

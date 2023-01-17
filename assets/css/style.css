@@ -264,8 +264,21 @@ img {
   display: flex;
   width: 100%;
   padding: 16px;
+  position: relative;
+}
+.main-header:after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 11rem;
+  left: 0;
+  top: -6rem;
+  background: #001519;
+  transform: skewY(-4deg);
 }
 .main-header .container {
+  position: relative;
+  z-index: 1;
   padding: 16px 0;
 }
 .main-header .container h2 {
@@ -278,6 +291,10 @@ img {
 .main-header .container .col-12:nth-child(2) {
   justify-content: end;
 }
+.main-header .container .jl-logo {
+  width: 50px;
+  margin-right: 5px;
+}
 
 nav.main-nav {
   display: flex;
@@ -286,11 +303,15 @@ nav.main-nav {
 }
 nav.main-nav ul {
   display: flex;
-  background-color: white;
+  background-color: #3f5c64;
   padding: 12px;
 }
 nav.main-nav ul li {
   padding: 0 5px;
+}
+nav.main-nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 main {
