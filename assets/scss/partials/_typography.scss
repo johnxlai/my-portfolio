@@ -16,3 +16,9 @@ p {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+.text {
+  &-center {
+    text-align: center;
+  }
+}
