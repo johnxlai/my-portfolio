@@ -11,7 +11,7 @@
 
 
 # Screenshot
-![Final Website](assets/image/portfolio-mock-up.png)
+![Final Website](assets/img/john-lai-website-mock-up.png)
 
 # Live Site
 * https://johnxlai.github.io/my-portfolio/
