@@ -3,7 +3,8 @@
   display: flex;
   width: 100%;
   padding: 16px;
-  position: relative;
+  position: absolute;
+  z-index: 1;
 
   &:after {
     position: absolute;
