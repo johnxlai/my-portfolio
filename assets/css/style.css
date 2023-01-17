@@ -339,7 +339,7 @@ main .recent-work:before {
 main .recent-work .project-container {
   display: flex;
   width: 100%;
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 main .recent-work .project-container .half-containers {
   width: 50%;
