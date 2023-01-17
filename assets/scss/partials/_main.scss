@@ -2,17 +2,10 @@
 
 main {
   &.hero {
-    background: center / cover no-repeat
-        linear-gradient(
-          to bottom,
-          rgba(73, 73, 73, 0.52),
-          rgba(21, 21, 21, 0.73)
-        ),
-      url('/assets/img/stars-min.jpg');
-
-    // background: center / contain no-repeat url("../../media/examples/firefox-logo.svg"),
-    //       #eee 35% url("../../media/examples/lizard.png");
-
+    background: center/ cover no-repeat
+        linear-gradient(to bottom, rgba($primary, 0.52), rgba(21, 21, 21, 1)),
+      url('/assets/img/space-min.jpg');
+    background-attachment: fixed;
     padding-top: 8rem;
   }
   h3 {
