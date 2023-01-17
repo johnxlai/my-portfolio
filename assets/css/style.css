@@ -424,6 +424,11 @@ main .recent-work .project-container .folio-container .project-title h5 {
     font-size: 1.5rem;
   }
 }
+main .recent-work .project-container .folio-container .project-title a.btn-primary {
+  padding: 16px;
+  margin-top: 5px;
+  display: inline-block;
+}
 main .recent-work .project-container.img-on-left .img-container {
   display: flex;
   flex-direction: column;
