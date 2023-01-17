@@ -36,7 +36,7 @@ main {
 
   //Recent Work - Portfolio
   .recent-work {
-    padding: 7rem 1rem 15rem;
+    padding: 7rem 1rem 17rem;
     position: relative;
 
     &:before {
@@ -196,6 +196,29 @@ main {
 
   //Contact Section
   .contact {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100vw;
+      height: 12rem;
+      left: 0;
+      top: -90px;
+      background: $primary;
+      transform: skewY(-4deg);
+    }
+
+    .col {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .say-hello {
+      position: absolute;
+      top: -14rem;
+    }
+
     a {
       color: $light-grey;
       text-decoration: none;

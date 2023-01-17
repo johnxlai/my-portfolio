@@ -323,7 +323,7 @@ main .about-me img.profile-image {
   border: 4px solid #fff;
 }
 main .recent-work {
-  padding: 7rem 1rem 15rem;
+  padding: 7rem 1rem 17rem;
   position: relative;
 }
 main .recent-work:before {
@@ -437,16 +437,39 @@ main .recent-work .project-container.img-on-right .folio-container .triangle h4 
   left: 47px;
   top: 7px;
 }
+main .contact {
+  position: relative;
+}
+main .contact:before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 12rem;
+  left: 0;
+  top: -90px;
+  background: #3f5c64;
+  transform: skewY(-4deg);
+}
+main .contact .col {
+  flex-direction: row;
+  justify-content: center;
+}
+main .contact .say-hello {
+  position: absolute;
+  top: -14rem;
+}
 main .contact a {
   color: lightgrey;
   text-decoration: none;
 }
 
 footer.footer {
-  padding: 48px 16px;
+  padding: 2rem;
   width: 100%;
   background: #001519;
   margin-top: auto;
+  position: relative;
+  z-index: 1;
 }
 footer.footer h6 {
   font-size: 1rem;

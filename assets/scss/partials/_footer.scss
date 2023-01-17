@@ -1,9 +1,11 @@
 // Footer
 footer.footer {
-  padding: 48px 16px;
+  padding: 2rem;
   width: 100%;
   background: $black;
   margin-top: auto;
+  position: relative;
+  z-index: 1;
 
   h6 {
     font-size: 1rem;
