@@ -1,11 +1,12 @@
 // Navigation
-nav.main-nav {
+nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 
-  ul {
+  ul.main-nav {
     display: flex;
+    // gap: 1rem;
     background-color: $primary;
     padding: 12px;
 
