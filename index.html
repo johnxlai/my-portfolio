@@ -30,8 +30,17 @@
                 alt="John Lai's Logo" />
               <h2 class="text-uppercase text-white">John Lai</h2>
             </div>
+
+            <button
+              class="mobile-nav-toggle"
+              aria-controls="primary-navigation"
+              aria-expanded="false">
+              <span class="sr-only">Menu</span>
+              <i class="fa fa-bars"></i>
+              <i class="fas fa-times"></i>
+            </button>
             <nav>
-              <ul class="main-nav">
+              <ul id="main-nav" data-visible="false" class="main-nav">
                 <li class="active"><a href="#about-me">About</a></li>
                 <li><a href="#recent-work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -305,5 +314,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>
