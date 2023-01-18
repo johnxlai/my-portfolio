@@ -1,6 +1,10 @@
 const primaryNav = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
+function changeAttrToFalse() {
+  primaryNav.setAttribute('data-visible', 'false');
+  navToggle.setAttribute('aria-expanded', 'false');
+}
 navToggle.addEventListener('click', () => {
   const visibility = primaryNav.getAttribute('data-visible');
 
@@ -8,14 +12,12 @@ navToggle.addEventListener('click', () => {
     primaryNav.setAttribute('data-visible', 'true');
     navToggle.setAttribute('aria-expanded', 'true');
   } else {
-    primaryNav.setAttribute('data-visible', 'false');
-    navToggle.setAttribute('aria-expanded', 'false');
+    changeAttrToFalse();
   }
 
   primaryNav.addEventListener('click', function () {
     setTimeout(function () {
-      primaryNav.setAttribute('data-visible', 'false');
-      navToggle.setAttribute('aria-expanded', 'false');
+      changeAttrToFalse();
     }, 500);
   });
 });
