@@ -11,9 +11,12 @@
 
     ul.main-nav {
       display: flex;
-      // gap: 1rem;
-      background-color: $primary;
+      gap: 0.5rem;
       padding: 12px;
+      text-transform: uppercase;
+      // background-color: $primary;
+      background-color: rgba($primary, 0.8);
+      backdrop-filter: blur(1rem);
 
       li {
         padding: 12px;
@@ -32,9 +35,13 @@
     }
 
     /* Extra small devices (phones, 600px and down) */
-    @media screen and (min-width: 600px) {
+    @media screen and (max-width: 600px) {
       ul.main-nav {
         position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 8rem) 2rem;
+        background-color: rgba(0, 0, 0, 0.8);
       }
     }
     /* Medium devices (landscape tablets, 768px and up) */

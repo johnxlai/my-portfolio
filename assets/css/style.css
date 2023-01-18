@@ -70,6 +70,10 @@ code {
   font-family: inherit;
 }
 
+button {
+  border: 0;
+}
+
 /* Removes default bullet points from lists */
 ol,
 ul {
@@ -318,8 +322,12 @@ img {
 }
 .col-header nav ul.main-nav {
   display: flex;
-  background-color: #3f5c64;
+  gap: 0.5rem;
   padding: 12px;
+  text-transform: uppercase;
+  background-color: rgba(63, 92, 100, 0.8);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 .col-header nav ul.main-nav li {
   padding: 12px;
@@ -333,9 +341,13 @@ img {
   text-decoration: none;
   font-weight: bold;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .col-header nav ul.main-nav {
     position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 8rem) 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 
