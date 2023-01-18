@@ -1,26 +1,30 @@
 // Navigation
-nav {
+.col-header {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  ul.main-nav {
+  justify-content: space-between;
+  nav {
     display: flex;
-    // gap: 1rem;
-    background-color: $primary;
-    padding: 12px;
+    align-items: center;
+    justify-content: flex-end;
 
-    li {
+    ul.main-nav {
+      display: flex;
+      // gap: 1rem;
+      background-color: $primary;
       padding: 12px;
-      &:hover {
-        background-color: $black;
-        color: whitesmoke;
-      }
 
-      a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
+      li {
+        padding: 12px;
+        &:hover {
+          background-color: $black;
+          color: whitesmoke;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
       }
     }
   }

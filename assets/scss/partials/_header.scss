@@ -26,16 +26,15 @@
       margin-bottom: 0;
       font-size: 1.3rem;
     }
-    .col-12 {
+
+    .logo-container {
+      display: flex;
       align-items: center;
-    }
-    .col-12:nth-child(2) {
-      justify-content: end;
-    }
-    .jl-logo {
-      width: 50px;
-      margin-right: 0.6rem;
-      background-color: #1e1e1e;
+      .jl-logo {
+        width: 50px;
+        margin-right: 0.6rem;
+        background-color: #1e1e1e;
+      }
     }
   }
 }

@@ -286,36 +286,38 @@ img {
   margin-bottom: 0;
   font-size: 1.3rem;
 }
-.main-header .container .col-12 {
+.main-header .container .logo-container {
+  display: flex;
   align-items: center;
 }
-.main-header .container .col-12:nth-child(2) {
-  justify-content: end;
-}
-.main-header .container .jl-logo {
+.main-header .container .logo-container .jl-logo {
   width: 50px;
   margin-right: 0.6rem;
   background-color: #1e1e1e;
 }
 
-nav {
+.col-header {
+  display: flex;
+  justify-content: space-between;
+}
+.col-header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-nav ul.main-nav {
+.col-header nav ul.main-nav {
   display: flex;
   background-color: #3f5c64;
   padding: 12px;
 }
-nav ul.main-nav li {
+.col-header nav ul.main-nav li {
   padding: 12px;
 }
-nav ul.main-nav li:hover {
+.col-header nav ul.main-nav li:hover {
   background-color: #001519;
   color: whitesmoke;
 }
-nav ul.main-nav li a {
+.col-header nav ul.main-nav li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
