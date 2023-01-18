@@ -332,6 +332,15 @@ img {
   font-weight: bold;
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .col-header {
+    flex-direction: column;
+  }
+  .col-header .logo-container {
+    margin-bottom: 16px;
+  }
+}
 /* small devices (landscape tablets, 600px and up) */
 @media (max-width: 600px) {
   .col-header nav ul.main-nav {
