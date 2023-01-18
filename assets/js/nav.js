@@ -11,4 +11,11 @@ navToggle.addEventListener('click', () => {
     primaryNav.setAttribute('data-visible', 'false');
     navToggle.setAttribute('aria-expanded', 'false');
   }
+
+  primaryNav.addEventListener('click', function () {
+    setTimeout(function () {
+      primaryNav.setAttribute('data-visible', 'false');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }, 500);
+  });
 });
