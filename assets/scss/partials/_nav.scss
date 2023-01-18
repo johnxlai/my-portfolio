@@ -51,6 +51,11 @@
       flex-direction: column;
       padding: min(30vh, 8rem) 2rem;
       background-color: rgba(0, 0, 0, 0.8);
+      transform: translateX(100%);
+
+      &[data-visible='true'] {
+        transform: translateX(0%);
+      }
     }
     .mobile-nav-toggle {
       display: block;
