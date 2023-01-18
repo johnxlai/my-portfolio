@@ -1,6 +1,8 @@
 // Navigation
 .col-header {
   display: flex;
+  align-items: center;
+
   justify-content: space-between;
   nav {
     display: flex;
@@ -24,8 +26,25 @@
           color: white;
           text-decoration: none;
           font-weight: bold;
+          // margin-inline-end: 0.75rem;
         }
       }
     }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media screen and (min-width: 600px) {
+      ul.main-nav {
+        position: fixed;
+      }
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* @media screen and (min-width: 768px) {
+} */
+    /* Large devices (laptops/desktops, 992px and up) */
+    /* @media screen and (min-width: 992px) {
+} */
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    /* @media screen and (min-width: 1200px) {
+} */
   }
 }
