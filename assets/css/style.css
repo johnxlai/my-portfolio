@@ -70,10 +70,6 @@ code {
   font-family: inherit;
 }
 
-button {
-  border: 0;
-}
-
 /* Removes default bullet points from lists */
 ol,
 ul {
@@ -305,20 +301,13 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+.col-header .mobile-nav-toggle {
+  display: none;
+}
 .col-header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* Extra small devices (phones, 600px and down) */
-  /* Medium devices (landscape tablets, 768px and up) */
-  /* @media screen and (min-width: 768px) {
-  } */
-  /* Large devices (laptops/desktops, 992px and up) */
-  /* @media screen and (min-width: 992px) {
-  } */
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  /* @media screen and (min-width: 1200px) {
-  } */
 }
 .col-header nav ul.main-nav {
   display: flex;
@@ -341,16 +330,40 @@ img {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
   .col-header nav ul.main-nav {
     position: fixed;
+    z-index: 1000;
     inset: 0 0 0 30%;
     flex-direction: column;
     padding: min(30vh, 8rem) 2rem;
     background-color: rgba(0, 0, 0, 0.8);
   }
+  .col-header .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: white;
+    border: 0;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
 }
-
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media screen and (min-width: 768px) {
+} */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media screen and (min-width: 992px) {
+} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media screen and (min-width: 1200px) {
+} */
 main {
   width: 100%;
 }
