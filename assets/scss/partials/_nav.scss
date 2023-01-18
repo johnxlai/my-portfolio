@@ -52,6 +52,7 @@
       padding: min(30vh, 8rem) 2rem;
       background-color: rgba(0, 0, 0, 0.8);
       transform: translateX(100%);
+      transition: transform 350ms ease-out;
 
       &[data-visible='true'] {
         transform: translateX(0%);
@@ -69,6 +70,22 @@
       aspect-ratio: 1;
       top: 1.5rem;
       right: 1.5rem;
+      &[aria-expanded='false'] {
+        .fa-bars {
+          display: block;
+        }
+        .fa-times {
+          display: none;
+        }
+      }
+      &[aria-expanded='true'] {
+        .fa-bars {
+          display: none;
+        }
+        .fa-times {
+          display: block;
+        }
+      }
     }
   }
 }

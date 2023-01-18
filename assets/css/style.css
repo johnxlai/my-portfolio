@@ -342,6 +342,7 @@ img {
     padding: min(30vh, 8rem) 2rem;
     background-color: rgba(0, 0, 0, 0.8);
     transform: translateX(100%);
+    transition: transform 350ms ease-out;
   }
   .col-header nav ul.main-nav[data-visible=true] {
     transform: translateX(0%);
@@ -358,6 +359,18 @@ img {
     aspect-ratio: 1;
     top: 1.5rem;
     right: 1.5rem;
+  }
+  .col-header .mobile-nav-toggle[aria-expanded=false] .fa-bars {
+    display: block;
+  }
+  .col-header .mobile-nav-toggle[aria-expanded=false] .fa-times {
+    display: none;
+  }
+  .col-header .mobile-nav-toggle[aria-expanded=true] .fa-bars {
+    display: none;
+  }
+  .col-header .mobile-nav-toggle[aria-expanded=true] .fa-times {
+    display: block;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
