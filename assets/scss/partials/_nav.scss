@@ -22,6 +22,7 @@
       // background-color: $primary;
       background-color: rgba($primary, 0.8);
       backdrop-filter: blur(1rem);
+      transform: rotateZ(-3deg);
 
       li {
         padding: 12px;
@@ -49,6 +50,9 @@
 
     .logo-container {
       margin-bottom: 16px;
+    }
+    nav ul.main-nav {
+      transform: rotate(0);
     }
   }
 }

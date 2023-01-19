@@ -318,6 +318,7 @@ img {
   background-color: rgba(63, 92, 100, 0.8);
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
+  transform: rotateZ(-3deg);
 }
 .col-header nav ul.main-nav li {
   padding: 12px;
@@ -339,6 +340,9 @@ img {
   }
   .col-header .logo-container {
     margin-bottom: 16px;
+  }
+  .col-header nav ul.main-nav {
+    transform: rotate(0);
   }
 }
 /* small devices (landscape tablets, 600px and up) */
